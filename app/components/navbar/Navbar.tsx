@@ -8,10 +8,17 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const Navbar = () => {
   const [openDropDown, setOpenDropdown] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
   const toggleDropdown = (menu: string) => {
     setOpenDropdown(openDropDown === menu ? null : menu);
   };
-
+  
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setOpenDropdown(null);
+  };
+  
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -19,52 +26,57 @@ const Navbar = () => {
           <Image src="/logo.png" width={200} height={40} alt="logo image" />
         </Link>
       </div>
-      <ul>
+      
+      <div className={styles.hamburger} onClick={toggleMobileMenu}>
+        {isMobileMenuOpen ? <IoMdClose /> : <IoMdMenu />}
+      </div>
+      <ul
+        className={`${styles.navMenu} ${
+          isMobileMenuOpen ? styles.mobileActive : ""
+        }`}
+      >
         <li>
           <Link href="/">Home</Link>
         </li>
         <li onClick={() => toggleDropdown("about")}>
-          <Link href="/about">
-            About
-            {openDropDown === "about" ? (
-              <IoMdArrowDropup className={styles.dropdownIcon} />
-            ) : (
-              <IoMdArrowDropdown className={styles.dropdownIcon} />
-            )}
-            {openDropDown === "about" && (
-              <ul className={styles.dropdownMenu}>
-                <li>
-                  <Link href="/about">About TEDxFUKashere</Link>
-                </li>
-                <li>
-                  <Link href="about/team">About Our Team</Link>
-                </li>
-              </ul>
-            )}
-          </Link>
+          About
+          {openDropDown === "about" ? (
+            <IoMdArrowDropup className={styles.dropdownIcon} />
+          ) : (
+            <IoMdArrowDropdown className={styles.dropdownIcon} />
+          )}
+          {openDropDown === "about" && (
+            <ul className={styles.dropdownMenu}>
+              <li>
+                <Link href="/about">About TEDxFUKashere</Link>
+              </li>
+              <li>
+                <Link href="about/team">About Our Team</Link>
+              </li>
+            </ul>
+          )}
         </li>
-        <li onClick={() => setOpenDropdown("speakers")}>
-          <Link href="/about">
-            Speakers
-            {openDropDown === "speakers" ? (
-              <IoMdArrowDropup className={styles.dropdownIcon} />
-            ) : (
-              <IoMdArrowDropdown className={styles.dropdownIcon} />
-            )}
-            {openDropDown === "speakers" && (
-              <ul className={styles.dropdownMenu}>
-                <li>
-                  <Link href="/speakers">Our Speakers</Link>
-                </li>
-                <li>
-                  <Link href="/speakers/apply">Apply to Speak</Link>
-                </li>
-              </ul>
-            )}
-          </Link>
+        
+        <li onClick={() => toggleDropdown("speakers")}>
+          Speakers
+          {openDropDown === "speakers" ? (
+            <IoMdArrowDropup className={styles.dropdownIcon} />
+          ) : (
+            <IoMdArrowDropdown className={styles.dropdownIcon} />
+          )}
+          {openDropDown === "speakers" && (
+            <ul className={styles.dropdownMenu}>
+              <li>
+                <Link href="/speakers">Our Speakers</Link>
+              </li>
+              <li>
+                <Link href="/speakers/apply">Apply to Speak</Link>
+              </li>
+            </ul>
+          )}
         </li>
-        <li onClick={() => setOpenDropdown("event")}>
-          <Link href="/event/upcoming">
+        <li onClick={() => toggleDropdown("event")}>
+          <Link href="#">
             Event
             {openDropDown === "event" ? (
               <IoMdArrowDropup className={styles.dropdownIcon} />
@@ -83,8 +95,8 @@ const Navbar = () => {
             )}
           </Link>
         </li>
-        <li onClick={() => setOpenDropdown("partners")}>
-          <Link href="/partners">
+        <li onClick={() => toggleDropdown("partners")}>
+          <Link href="#">
             Partners
             {openDropDown === "partners" ? (
               <IoMdArrowDropup className={styles.dropdownIcon} />
