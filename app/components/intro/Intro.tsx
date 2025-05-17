@@ -9,7 +9,9 @@ const Intro = () => {
     <section className="container">
       <div className={styles.intro}>
         <div className={styles.content}>
-          <h2 className={styles.heading}>What is TEDxFUKashere?</h2>
+          <h2 className={styles.heading}>
+            What is TEDx<span className={styles.span}>FUKashere?</span>
+          </h2>
           <p className={styles.description}>
             TEDxFUKashere is an independently organized TED event that brings
             together visionaries, thinkers, and changemakers from our university

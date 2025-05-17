@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import HeroSection from "./components/sections/hero/HeroSection";
 import Intro from "./components/intro/Intro";
 import FeaturedSpeakers from "./components/featuredSpeakers/FeaturedSpeakers";
+import EventInfo from "./components/eventInfo/EventInfo";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <Intro />
       <FeaturedSpeakers />
+      <EventInfo />
     </>
   );
 }
