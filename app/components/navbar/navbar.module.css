@@ -85,7 +85,7 @@
   .hamburger {
     display: none;
   }
-  
+
   .navMenu {
     display: flex;
     flex-direction: row;
@@ -93,13 +93,13 @@
     background: transparent;
     width: auto;
   }
-  
+
   .navMenu li {
     border-bottom: none;
     padding: 12px 18px;
     font-size: 16px;
   }
-  
+
   .dropdownMenu {
     position: absolute;
     top: 65px;
@@ -108,11 +108,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     min-width: 185px;
     z-index: 1000;
-  }
+    border-top: 1px solid #e62b1e;
   
+  }
+
   .dropdownMenu li {
     padding: 0.5rem 1rem;
     font-size: 15px;
+    border-bottom: 1px solid #e62b1e;
+  
   }
 }
 
@@ -121,15 +125,15 @@
   .navbar {
     padding: 24px 32px;
   }
-  
+
   .navbarContent {
     max-width: 1600px;
   }
-  
+
   .logo img {
     width: 200px;
   }
-  
+
   .navMenu li {
     font-size: 18px;
     line-height: 1.8;
@@ -142,15 +146,15 @@
   .navbar {
     padding: 30px 48px;
   }
-  
+
   .navbarContent {
     max-width: 1720px;
   }
-  
+
   .logo img {
     width: 220px;
   }
-  
+
   .navMenu li {
     font-size: 20px;
     padding: 18px 32px;
@@ -162,15 +166,15 @@
   .navbar {
     padding: 36px 64px;
   }
-  
+
   .navbarContent {
     max-width: 1900px;
   }
-  
+
   .logo img {
     width: 240px;
   }
-  
+
   .navMenu li {
     font-size: 22px;
     padding: 20px 36px;
