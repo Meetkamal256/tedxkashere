@@ -3,8 +3,12 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
+import {
+  IoMdMenu,
+  IoMdClose,
+  IoMdArrowDropdown,
+  IoMdArrowDropup,
+} from "react-icons/io";
 
 const Navbar = () => {
   const [openDropDown, setOpenDropdown] = useState<string | null>(null);
@@ -21,62 +25,65 @@ const Navbar = () => {
   
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/logo.png" width={200} height={40} alt="logo image" />
-        </Link>
-      </div>
-      
-      <div className={styles.hamburger} onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <IoMdClose /> : <IoMdMenu />}
-      </div>
-      <ul
-        className={`${styles.navMenu} ${
-          isMobileMenuOpen ? styles.mobileActive : ""
-        }`}
-      >
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li onClick={() => toggleDropdown("about")}>
-          About
-          {openDropDown === "about" ? (
-            <IoMdArrowDropup className={styles.dropdownIcon} />
-          ) : (
-            <IoMdArrowDropdown className={styles.dropdownIcon} />
-          )}
-          {openDropDown === "about" && (
-            <ul className={styles.dropdownMenu}>
-              <li>
-                <Link href="/about">About TEDxFUKashere</Link>
-              </li>
-              <li>
-                <Link href="about/team">About Our Team</Link>
-              </li>
-            </ul>
-          )}
-        </li>
+      <div className={styles.navbarContent}>
+        <div className={styles.logo}>
+          <Link href="/">
+            <Image src="/logo.png" width={200} height={40} alt="logo image" />
+          </Link>
+        </div>
         
-        <li onClick={() => toggleDropdown("speakers")}>
-          Speakers
-          {openDropDown === "speakers" ? (
-            <IoMdArrowDropup className={styles.dropdownIcon} />
-          ) : (
-            <IoMdArrowDropdown className={styles.dropdownIcon} />
-          )}
-          {openDropDown === "speakers" && (
-            <ul className={styles.dropdownMenu}>
-              <li>
-                <Link href="/speakers">Our Speakers</Link>
-              </li>
-              <li>
-                <Link href="/speakers/apply">Apply to Speak</Link>
-              </li>
-            </ul>
-          )}
-        </li>
-        <li onClick={() => toggleDropdown("event")}>
-          <Link href="#">
+        <div className={styles.hamburger} onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? <IoMdClose /> : <IoMdMenu />}
+        </div>
+        
+        <ul
+          className={`${styles.navMenu} ${
+            isMobileMenuOpen ? styles.mobileActive : ""
+          }`}
+        >
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          
+          <li onClick={() => toggleDropdown("about")}>
+            About
+            {openDropDown === "about" ? (
+              <IoMdArrowDropup className={styles.dropdownIcon} />
+            ) : (
+              <IoMdArrowDropdown className={styles.dropdownIcon} />
+            )}
+            {openDropDown === "about" && (
+              <ul className={styles.dropdownMenu}>
+                <li>
+                  <Link href="/about">About TEDxFUKashere</Link>
+                </li>
+                <li>
+                  <Link href="/about/team">About Our Team</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+          
+          <li onClick={() => toggleDropdown("speakers")}>
+            Speakers
+            {openDropDown === "speakers" ? (
+              <IoMdArrowDropup className={styles.dropdownIcon} />
+            ) : (
+              <IoMdArrowDropdown className={styles.dropdownIcon} />
+            )}
+            {openDropDown === "speakers" && (
+              <ul className={styles.dropdownMenu}>
+                <li>
+                  <Link href="/speakers">Our Speakers</Link>
+                </li>
+                <li>
+                  <Link href="/speakers/apply">Apply to Speak</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+          
+          <li onClick={() => toggleDropdown("event")}>
             Event
             {openDropDown === "event" ? (
               <IoMdArrowDropup className={styles.dropdownIcon} />
@@ -93,10 +100,9 @@ const Navbar = () => {
                 </li>
               </ul>
             )}
-          </Link>
-        </li>
-        <li onClick={() => toggleDropdown("partners")}>
-          <Link href="#">
+          </li>
+          
+          <li onClick={() => toggleDropdown("partners")}>
             Partners
             {openDropDown === "partners" ? (
               <IoMdArrowDropup className={styles.dropdownIcon} />
@@ -113,12 +119,13 @@ const Navbar = () => {
                 </li>
               </ul>
             )}
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-      </ul>
+          </li>
+          
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
