@@ -9,7 +9,7 @@ const FeaturedSpeakers = () => {
   return (
     <section className="container">
       <div className={styles.speakersSection}>
-        <h2 className={styles.heading}>Featured Speakers</h2>
+        <h2 className={styles.heading}>Featured <span className={styles.span}>Speakers</span></h2>
         <div className={styles.grid}>
           {featuredSpeakers.map((speaker) => (
             <div className={styles.card} key={speaker.id}>
