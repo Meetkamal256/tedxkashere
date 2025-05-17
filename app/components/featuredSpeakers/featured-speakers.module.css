@@ -1,6 +1,6 @@
 .speakersSection {
   background: #000;
-  padding: 40px 10px;
+  padding: 40px 20px;
   text-align: center;
   width: 100%;
   max-width: 100%;
@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+  padding: 0px;
 }
 
 .card {
@@ -48,4 +49,24 @@
 
 .topic {
   font-size: 15px;
+}
+
+/* Medium screens: tablets */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 32px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .topic {
+    font-size: 16px;
+  }
 }

@@ -16,8 +16,8 @@ const FeaturedSpeakers = () => {
               <Image
                 src="/blankImage.png"
                 alt="speaker.name"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className={styles.image}
               />
               <h3 className={styles.name}>{speaker.name}</h3>
