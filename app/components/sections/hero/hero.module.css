@@ -16,6 +16,10 @@
     margin-bottom: 16px;
     font-size: 28px;
   }
+
+  .title span {
+    color: #fff;
+  }
   
   .subtitle {
     font-size: 16px;
@@ -42,3 +46,94 @@
     background-color: #c1271a;
   }
  
+   
+  /* Tablet: 600px and up */
+  @media (min-width: 600px) {
+    .title {
+      font-size: 32px;
+    }
+  
+    .subtitle {
+      font-size: 18px;
+    }
+  
+    .ctaButton {
+      font-size: 15px;
+      padding: 12px 24px;
+    }
+  }
+  
+  /* Laptop: 1024px and up */
+  @media (min-width: 1024px) {
+    .hero {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding: 60px 80px;
+    }
+  
+    .title {
+      font-size: 40px;
+    }
+  
+    .subtitle {
+      font-size: 20px;
+    }
+  
+    .details {
+      font-size: 18px;
+    }
+  
+    .ctaButton {
+      font-size: 16px;
+    }
+  }
+  
+  /* Large desktop: 1440px and up */
+  @media (min-width: 1440px) {
+    .hero {
+      padding: 80px 160px;
+      min-height: 70vh;
+    }
+  
+    .title {
+      font-size: 48px;
+    }
+  
+    .subtitle {
+      font-size: 22px;
+    }
+  
+    .details {
+      font-size: 20px;
+    }
+  
+    .ctaButton {
+      font-size: 18px;
+      padding: 14px 32px;
+    }
+  }
+  
+  /* Extra-large desktop: 1920px and up */
+  @media (min-width: 1920px) {
+    .hero {
+      padding: 100px 240px;
+    }
+  
+    .title {
+      font-size: 56px;
+    }
+  
+    .subtitle {
+      font-size: 24px;
+    }
+  
+    .details {
+      font-size: 22px;
+    }
+  
+    .ctaButton {
+      font-size: 20px;
+    }
+  }
+  
