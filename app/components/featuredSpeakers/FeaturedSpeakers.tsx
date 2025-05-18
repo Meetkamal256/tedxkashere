@@ -5,6 +5,7 @@ import styles from "./featured-speakers.module.css";
 import Image from "next/image";
 import { featuredSpeakers } from "../../data";
 import DetailsBtn from "../detailsBtn/DetailsBtn";
+import SpeakerCard from "../card/SpeakerCard";
 
 const FeaturedSpeakers = () => {
   return (
@@ -15,19 +16,12 @@ const FeaturedSpeakers = () => {
         </h2>
         <div className={styles.grid}>
           {featuredSpeakers.map((speaker) => (
-            <div className={styles.card} key={speaker.id}>
-              <div className={styles.imageContainer}>
-                <Image
-                  src="/blankImage.png"
-                  alt={speaker.name}
-                  fill
-                  className={styles.image}
-                />
-              </div>
-
-              <h3 className={styles.name}>{speaker.name}</h3>
-              <p className={styles.topic}>{speaker.topic}</p>
-            </div>
+            <SpeakerCard
+              key={speaker.id}
+              name={speaker.name}
+              topic={speaker.topic}
+              imageSrc="/blankImage.png"
+            />
           ))}
         </div>
         <DetailsBtn title="Meet the speakers" href="/speakers" />

@@ -1,0 +1,60 @@
+.card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.image {
+  object-fit: cover;
+}
+.name {
+  font-size: 18px;
+}
+
+.topic {
+  font-size: 15px;
+}
+
+/* Medium screens: tablets */
+@media (min-width: 768px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .topic {
+    font-size: 16px;
+  }
+}
+
+/* Ultra-wide screens: 1920px+ */
+@media (min-width: 1920px) {
+  .card {
+    padding: 32px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+  
+  .topic {
+    font-size: 17px;
+  }
+}
