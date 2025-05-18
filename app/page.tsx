@@ -4,6 +4,7 @@ import HeroSection from "./components/sections/hero/HeroSection";
 import Intro from "./components/intro/Intro";
 import FeaturedSpeakers from "./components/featuredSpeakers/FeaturedSpeakers";
 import EventInfo from "./components/eventInfo/EventInfo";
+import Sponsors from "./components/sponsors/Sponsors";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Intro />
       <FeaturedSpeakers />
       <EventInfo />
+      <Sponsors />
     </>
   );
 }
