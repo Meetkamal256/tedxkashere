@@ -3,6 +3,7 @@
 import styles from "./intro.module.css";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import DetailsBtn from "../detailsBtn/DetailsBtn";
 
 const Intro = () => {
   return (
@@ -19,10 +20,7 @@ const Intro = () => {
             to spark deep conversation and connection through powerful talks and
             stories.
           </p>
-          <Link href="/about" className={styles.learnMore}>
-            Learn more
-            <FaArrowRightLong className="arrowRightIcon" />
-          </Link>
+          <DetailsBtn title="Our Story" href="/about" />
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./featured-speakers.module.css";
 import Image from "next/image";
 import { featuredSpeakers } from "../../data";
+import DetailsBtn from "../detailsBtn/DetailsBtn";
 
 const FeaturedSpeakers = () => {
   return (
@@ -29,9 +30,7 @@ const FeaturedSpeakers = () => {
             </div>
           ))}
         </div>
-        <Link href="/event/upcoming" className={styles.cta}>
-          Learn More
-        </Link>
+        <DetailsBtn title="Meet the speakers" href="/speakers" />
       </div>
     </section>
   );

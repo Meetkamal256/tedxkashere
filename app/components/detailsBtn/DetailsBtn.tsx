@@ -9,8 +9,8 @@ type DetailsBtnProp = {
 const detailsBtn = ({title, href}: DetailsBtnProp) => {
   return (
     <div>
-      <Link href="/event/upcoming" className={styles.cta}>
-        Learn More
+      <Link href={href} className={styles.cta}>
+        {title}
       </Link>
     </div>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import DetailsBtn from "../detailsBtn/DetailsBtn";
 import styles from "./event-info.module.css";
 
 const EventInfo = () => {
@@ -13,9 +14,7 @@ const EventInfo = () => {
           Join us for a day of thought-provoking talks, inspiring performances,
           and meaningful conversations. Be part of the TEDxFUKashere experience.
         </p>
-        <a href="/event/upcoming" className={styles.cta}>
-          Learn More
-        </a>
+        <DetailsBtn title="View Upcoming Events" href="/event/upcoming" />
       </div>
     </section>
   );

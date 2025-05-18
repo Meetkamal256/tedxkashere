@@ -21,7 +21,7 @@ const Hero = () => {
             target="_blank"
             className={styles.ctaButton}
           >
-            Get Free Ticket
+            Register Now
           </Link>
         </div>
       </div>

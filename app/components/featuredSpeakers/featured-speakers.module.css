@@ -62,23 +62,6 @@
   font-size: 15px;
 }
 
-.cta {
-  display: inline-block;
-  background: #e62b1e;
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 12px 24px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-.cta:hover {
-  background-color: #c1271a;
-}
-
 /* Medium screens: tablets */
 @media (min-width: 768px) {
   .grid {
@@ -97,11 +80,6 @@
   .topic {
     font-size: 16px;
   }
-
-  .cta {
-    padding: 14px 28px;
-    font-size: 16px;
-  }
 }
 
 /* Large screens: desktops */
@@ -118,11 +96,6 @@
 
   .heading {
     font-size: 36px;
-  }
-
-  .cta {
-    font-size: 18px;
-    padding: 16px 32px;
   }
 }
 
