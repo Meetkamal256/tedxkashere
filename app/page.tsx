@@ -6,6 +6,7 @@ import FeaturedSpeakers from "./components/featuredSpeakers/FeaturedSpeakers";
 import EventInfo from "./components/eventInfo/EventInfo";
 import Sponsors from "./components/sponsors/Sponsors";
 import Newsletter from "./components/sections/newsletter/Newsletter";
+import Footer from "./components/sections/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <EventInfo />
       <Sponsors />
       <Newsletter />
+      <Footer />
     </>
   );
 }
