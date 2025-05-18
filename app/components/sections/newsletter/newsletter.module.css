@@ -1,19 +1,19 @@
 .ctaSection {
   background-color: #808080;
-  padding: 60px 20px;
+  padding: 40px 16px;
   text-align: center;
   border-radius: 20px;
   color: #fff;
 }
 
 .ctaContainer h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .ctaContainer p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 16px;
 }
 
@@ -23,10 +23,12 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .newsletterForm input[type="email"] {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -47,4 +49,80 @@
 .newsletterForm button:hover {
   background-color: white;
   color: #e62b1e;
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .ctaSection {
+    padding: 60px 32px;
+  }
+  
+  .ctaContainer h2 {
+    font-size: 28px;
+  }
+  
+  .ctaContainer p {
+    font-size: 16px;
+  }
+  
+  .newsletterForm {
+    flex-direction: row;
+  }
+  
+  .newsletterForm input[type="email"] {
+    flex: 2;
+    min-width: 250px;
+  }
+  
+  .newsletterForm button {
+    flex: 1;
+    min-width: 140px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .ctaSection {
+    padding: 70px 40px;
+  }
+  
+  .ctaContainer h2 {
+    font-size: 32px;
+  }
+  
+  .ctaContainer p {
+    font-size: 17px;
+  }
+  
+  .newsletterForm {
+    max-width: 700px;
+  }
+}
+
+/* Extra-large screens (1440px+) */
+@media (min-width: 1440px) {
+  .ctaSection {
+    padding: 80px 80px;
+  }
+  
+  .ctaContainer h2 {
+    font-size: 36px;
+  }
+  
+  .ctaContainer p {
+    font-size: 18px;
+  }
+  
+  .newsletterForm {
+    max-width: 800px;
+  }
+  
+  .newsletterForm input[type="email"] {
+    font-size: 1.1rem;
+  }
+  
+  .newsletterForm button {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+  }
 }
