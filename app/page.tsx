@@ -17,7 +17,6 @@ export default function Home() {
       <EventInfo />
       <Sponsors />
       <Newsletter />
-      <Footer />
     </>
   );
 }
