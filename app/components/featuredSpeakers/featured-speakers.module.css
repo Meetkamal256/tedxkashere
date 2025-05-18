@@ -35,15 +35,23 @@
   transition: transform 0.3s ease;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .card:hover {
   transform: translateY(-6px);
 }
 
-.image {
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 16px;
+}
+
+.image {
   object-fit: cover;
 }
 .name {
@@ -54,80 +62,107 @@
   font-size: 15px;
 }
 
+.cta {
+  display: inline-block;
+  background: #e62b1e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.cta:hover {
+  background-color: #c1271a;
+}
+
 /* Medium screens: tablets */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 32px;
   }
-  
+
   .heading {
     font-size: 32px;
   }
-  
+
   .name {
     font-size: 20px;
   }
-  
+
   .topic {
+    font-size: 16px;
+  }
+
+  .cta {
+    padding: 14px 28px;
     font-size: 16px;
   }
 }
 
 /* Large screens: desktops */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0 40px; 
+    padding: 0 40px;
   }
-  
+
   .speakersSection {
     padding: 60px 40px;
   }
-  
+
   .heading {
     font-size: 36px;
+  }
+
+  .cta {
+    font-size: 18px;
+    padding: 16px 32px;
   }
 }
 
 /* Extra large: 1440px+ */
 @media (min-width: 1440px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 1400px;
-      padding: 0;
-    }
-  
-    .speakersSection {
-      padding: 80px 80px;
-    }
-  
-    .heading {
-      font-size: 42px;
-    }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    padding: 0;
   }
-  
-  /* Ultra-wide screens: 1920px+ */
-  @media (min-width: 1920px) {
-    .grid {
-      max-width: 1600px;
-      gap: 48px;
-    }
-  
-    .card {
-      padding: 32px;
-    }
-  
-    .heading {
-      font-size: 48px;
-    }
-  
-    .name {
-      font-size: 22px;
-    }
-  
-    .topic {
-      font-size: 17px;
-    }
+
+  .speakersSection {
+    padding: 80px 80px;
   }
+
+  .heading {
+    font-size: 42px;
+  }
+}
+
+/* Ultra-wide screens: 1920px+ */
+@media (min-width: 1920px) {
+  .grid {
+    max-width: 1600px;
+    gap: 48px;
+  }
+
+  .card {
+    padding: 32px;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .topic {
+    font-size: 17px;
+  }
+}

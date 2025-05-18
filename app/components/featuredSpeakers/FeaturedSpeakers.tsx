@@ -9,22 +9,29 @@ const FeaturedSpeakers = () => {
   return (
     <section className="container">
       <div className={styles.speakersSection}>
-        <h2 className={styles.heading}>Featured <span className={styles.span}>Speakers</span></h2>
+        <h2 className={styles.heading}>
+          Featured <span className={styles.span}>Speakers</span>
+        </h2>
         <div className={styles.grid}>
           {featuredSpeakers.map((speaker) => (
             <div className={styles.card} key={speaker.id}>
-              <Image
-                src="/blankImage.png"
-                alt="speaker.name"
-                width={200}
-                height={200}
-                className={styles.image}
-              />
+              <div className={styles.imageContainer}>
+                <Image
+                  src="/blankImage.png"
+                  alt={speaker.name}
+                  fill
+                  className={styles.image}
+                />
+              </div>
+
               <h3 className={styles.name}>{speaker.name}</h3>
               <p className={styles.topic}>{speaker.topic}</p>
             </div>
           ))}
         </div>
+        <Link href="/event/upcoming" className={styles.cta}>
+          Learn More
+        </Link>
       </div>
     </section>
   );

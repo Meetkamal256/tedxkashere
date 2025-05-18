@@ -80,7 +80,6 @@
   float: right;
 }
 
-/* Desktop and up */
 @media (min-width: 1024px) {
   .hamburger {
     display: none;
@@ -97,7 +96,7 @@
   .navMenu li {
     border-bottom: none;
     padding: 12px 18px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .dropdownMenu {
@@ -108,22 +107,38 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     min-width: 185px;
     z-index: 1000;
-    border-top: 1px solid #e62b1e;
-  
+    border-top: 0.5px solid #e62b1e;
   }
 
   .dropdownMenu li {
     padding: 0.5rem 1rem;
-    font-size: 15px;
-    border-bottom: 1px solid #e62b1e;
-  
+    font-size: 14px;
   }
 }
 
-/* Large Desktop */
+/* Medium-Large Desktop: 1440px and up */
 @media (min-width: 1440px) {
   .navbar {
-    padding: 24px 32px;
+    padding: 16px 28px;
+  }
+
+  .navbarContent {
+    max-width: 1500px;
+  }
+
+  .logo img {
+    width: 165px;
+  }
+
+  .navMenu li {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .navbar {
+    padding: 18px 32px;
   }
 
   .navbarContent {
@@ -131,52 +146,51 @@
   }
 
   .logo img {
-    width: 200px;
+    width: 175px;
   }
 
   .navMenu li {
-    font-size: 18px;
-    line-height: 1.8;
-    padding: 14px 28px;
+    font-size: 16px;
+    padding: 14px 24px;
   }
 }
 
-/* Extra Large Desktop */
+/* Large Desktop: 1680px and up */
 @media (min-width: 1680px) {
   .navbar {
-    padding: 30px 48px;
+    padding: 20px 36px;
   }
 
   .navbarContent {
-    max-width: 1720px;
+    max-width: 1680px;
   }
 
   .logo img {
-    width: 220px;
+    width: 185px;
   }
 
   .navMenu li {
-    font-size: 20px;
-    padding: 18px 32px;
+    font-size: 16.5px;
+    padding: 15px 26px;
   }
 }
 
-/* Ultra-Wide Screens */
+/* Extra-Wide Screens: 1920px and up */
 @media (min-width: 1920px) {
   .navbar {
-    padding: 36px 64px;
+    padding: 22px 40px;
   }
 
   .navbarContent {
-    max-width: 1900px;
+    max-width: 1800px;
   }
 
   .logo img {
-    width: 240px;
+    width: 190px;
   }
 
   .navMenu li {
-    font-size: 22px;
-    padding: 20px 36px;
+    font-size: 17px;
+    padding: 16px 28px;
   }
 }
