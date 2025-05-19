@@ -1,5 +1,5 @@
 .eventSection {
-  background-color: #000;
+  background-color: #fff3f2;
   color: #fff;
   padding: 40px 16px;
   text-align: center;
@@ -18,7 +18,7 @@
 .location {
   font-size: 14px;
   font-weight: 600;
-  color: #ddd;
+  color: #333;
   margin-bottom: 16px;
 }
 
@@ -27,6 +27,7 @@
   margin-right: auto;
   font-size: 16px;
   margin-bottom: 16px;
+  color: #333;
 
 }
 
