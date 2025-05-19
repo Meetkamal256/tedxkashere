@@ -1,6 +1,4 @@
-import styles from "./upcoming-event.module.css";
-import EventInfo from "@/app/components/eventInfo/EventInfo";
-import SpeakerCard from "@/app/components/speakerCard/SpeakerCard";
+import styles from "./upcoming-event.module.css";import SpeakerCard from "@/app/components/speakerCard/SpeakerCard";
 import { featuredSpeakers } from "../../data";
 
 const page = () => {

@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./our-team.module.css";
-import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import Image from "next/image";
 import { teamMembers } from "@/app/data";
 import TeamCard from "@/app/components/teamCard/TeamCard";
 

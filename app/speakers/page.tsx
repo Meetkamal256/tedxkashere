@@ -3,11 +3,10 @@ import { useState } from "react";
 import SpeakerCard from "../components/speakerCard/SpeakerCard";
 import { allSpeakers, previousSpeakers } from "../data";
 import styles from "./speaker.module.css";
-import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [activeTab, setActiveTab] = useState("all");
-
+  
   const speakers = activeTab === "all" ? allSpeakers : previousSpeakers;
   return (
     <section className="container">
@@ -26,7 +25,7 @@ const page = () => {
             Previous Speakers
           </button>
         </div>
-
+        
         <div className={styles.grid}>
           {speakers.map((speaker) => (
             <SpeakerCard
@@ -42,4 +41,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

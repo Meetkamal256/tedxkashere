@@ -1,5 +1,4 @@
 "use client";
-
 import DetailsBtn from "../detailsBtn/DetailsBtn";
 import styles from "./event-info.module.css";
 

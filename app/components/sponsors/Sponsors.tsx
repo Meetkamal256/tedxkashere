@@ -1,7 +1,6 @@
 "use client";
 import styles from "./sponsors.module.css";
 import { sponsors } from "../../data";
-import Image from "next/image";
 
 const Sponsors = () => {
   return (

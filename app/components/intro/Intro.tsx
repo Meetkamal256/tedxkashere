@@ -1,8 +1,6 @@
 "use client";
 
 import styles from "./intro.module.css";
-import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
 import DetailsBtn from "../detailsBtn/DetailsBtn";
 
 const Intro = () => {

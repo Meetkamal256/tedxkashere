@@ -1,8 +1,5 @@
 "use client";
-
-import Link from "next/link";
 import styles from "./featured-speakers.module.css";
-import Image from "next/image";
 import { featuredSpeakers } from "../../data";
 import DetailsBtn from "../detailsBtn/DetailsBtn";
 import SpeakerCard from "../speakerCard/SpeakerCard";
