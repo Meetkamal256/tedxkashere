@@ -2,11 +2,14 @@
     background: #1a1a1a;
     padding: 40px 16px;
     color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   
   .header {
     text-align: center;
     margin-bottom: 3rem;
+    padding: 0 16px;
   }
   
   .header h1 {
@@ -21,14 +24,44 @@
   .header p {
     font-size: 1rem;
     color: #bbb;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .eventGrid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+    padding: 0 16px;
   }
   
+  @media (min-width: 768px) {
+    .eventGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .eventGrid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .previousEventPage {
+      padding: 60px 80px;
+    }
+  
+    .header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .header p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* CARD STYLING */
   .card {
     background-color: #000;
     padding: 24px;
@@ -36,13 +69,14 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     text-align: left;
+    cursor: pointer;
   }
   
   .card:hover {
     transform: translateY(-6px);
   }
   
-.imageContainer {
+  .imageContainer {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -86,4 +120,4 @@
   .button:hover {
     background: #c82315;
   }
- 
+  
