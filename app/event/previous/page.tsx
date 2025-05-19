@@ -2,6 +2,8 @@ import styles from "./previous-event.module.css";
 import Image from "next/image";
 import { previousEvents } from "@/app/data";
 
+
+
 const page = () => {
   return (
     <section className="container">

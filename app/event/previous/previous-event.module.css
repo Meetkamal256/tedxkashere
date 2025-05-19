@@ -1,0 +1,89 @@
+.previousEventPage {
+    background: #1a1a1a;
+    padding: 40px 16px;
+    color: #fff;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header span {
+    color: #e62b1e;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .eventGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .card {
+    background-color: #000;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+.imageContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border-radius: 20px;
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .theme {
+    color: #e62b1e;
+    margin-bottom: 8px;
+  }
+  
+  .summary {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  .button {
+    display: inline-block;
+    color: #fff;
+    background: #e62b1e;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #c82315;
+  }
+ 
