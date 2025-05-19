@@ -1,0 +1,68 @@
+.card {
+  background-color: #000;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+
+.role {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+.socials a {
+  margin: 0 8px;
+  color: #e62b1e;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #fff;
+}
+
+/* ==== Tablets (≤1024px) ==== */
+@media (max-width: 1024px) {
+  .card {
+    padding: 20px;
+  }
+}
+
+/* ==== Small Tablets (≤768px) ==== */
+@media (max-width: 768px) {
+  .socials a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ==== Mobile (≤480px) ==== */
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+  }
+  
+  .socials a {
+    font-size: 1rem;
+  }
+}
