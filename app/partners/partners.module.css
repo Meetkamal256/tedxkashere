@@ -1,0 +1,150 @@
+.intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+    color: #e62b1e;
+    margin-bottom: 16px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .partners {
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .partners h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #e62b1e;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    justify-items: center;
+  }
+  
+  .partnerCard {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 30px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 240px;
+  }
+  
+  .cta {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    border-radius: 10px;
+  }
+  
+  .cta h2 {
+    font-size: 26px;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #555;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    background-color: #e62b1e;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #c82315;
+  }
+  
+  /* ========== Responsive Styles ========== */
+  
+  /* Tablets (≤1024px) */
+  @media (max-width: 1024px) {
+    .intro h1 {
+      font-size: 30px;
+    }
+  
+    .intro p {
+      font-size: 16px;
+    }
+  
+    .partners h2 {
+      font-size: 24px;
+    }
+  
+    .cta h2 {
+      font-size: 22px;
+    }
+  
+    .cta p {
+      font-size: 16px;
+    }
+  
+    .ctaButton {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile (≤768px) */
+  @media (max-width: 768px) {
+    .intro {
+      margin-bottom: 40px;
+    }
+    
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+    .partnerCard {
+      max-width: 100%;
+      padding: 24px 16px;
+    }
+  
+    .intro h1 {
+      font-size: 26px;
+    }
+  
+    .intro p {
+      font-size: 15px;
+    }
+  
+    .partners h2 {
+      font-size: 22px;
+    }
+  
+    .cta h2 {
+      font-size: 20px;
+    }
+  
+    .cta p {
+      font-size: 15px;
+    }
+  
+    .ctaButton {
+      font-size: 15px;
+      padding: 10px 18px;
+    }
+  }
+  
