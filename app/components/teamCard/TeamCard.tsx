@@ -31,7 +31,7 @@ const TeamCard = ({
           priority
         />
       </div>
-
+      
       <h2>{name}</h2>
       <p className={styles.role}>{role}</p>
       <div className={styles.socials}>

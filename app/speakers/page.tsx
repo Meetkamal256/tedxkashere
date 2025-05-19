@@ -27,10 +27,6 @@ const page = () => {
           </button>
         </div>
 
-        <h2 className={styles.heading}>
-          {activeTab === "all" ? "All Speakers" : "Previous Speakers"}
-        </h2>
-
         <div className={styles.grid}>
           {speakers.map((speaker) => (
             <SpeakerCard
