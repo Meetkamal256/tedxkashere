@@ -78,6 +78,12 @@
     background-color: #c81f14;
   }
   
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  
   /* Mobile responsive */
   @media (max-width: 600px) {
     .header h1 {
