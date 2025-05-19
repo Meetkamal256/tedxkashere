@@ -1,5 +1,6 @@
+/* Event section */
 .eventSection {
-  background-color: #fff3f2; /* soft accent background */
+  background-color: #fff3f2;
   color: #333;
   padding: 40px 16px;
   text-align: center;
@@ -30,6 +31,7 @@
   line-height: 1.6;
 }
 
+/* Agenda section */
 .agendaSection {
   background-color: #e62b1e;
   padding: 60px 24px;
@@ -77,53 +79,63 @@
   color: #fff;
   margin-right: 8px;
 }
+
+/* Featured speaker section */
 .speakerGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 32px;
-    padding: 0 20px;
-  }
-  
-  .speakersSection {
-    background: #000;
-    padding: 40px 20px;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .heading {
-    font-weight: 700;
-    color: #e62b1e;
-    font-size: 28px;
-    margin-bottom: 16px;
-  }
-  
-  .span {
-    color: #fff;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 32px;
-    padding: 0 20px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.speakersSection {
+  background: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.heading {
+  font-weight: 700;
+  color: #e62b1e;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.span {
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 32px;
+  padding: 0 20px;
+}
 
 /* Tablet: 641px+ */
 @media (min-width: 641px) {
-  .heading {
-    font-size: 28px;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 32px;
   }
-  
-  .cta {
-    padding: 14px 28px;
+
+  .speakerHeading {
+    font-size: 32px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .topic {
     font-size: 16px;
   }
 }
@@ -134,27 +146,35 @@
     padding: 80px 64px;
     border-radius: 24px;
   }
-
+  
   .heading {
     font-size: 32px;
     margin-bottom: 24px;
   }
-
+  
   .date,
   .location,
   .description {
     font-size: 16px;
   }
-
+  
   .description {
     font-size: 18px;
     max-width: 850px;
     margin-bottom: 24px;
   }
-
-  .cta {
-    font-size: 16px;
-    padding: 16px 32px;
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+  }
+  
+  .speakersSection {
+    padding: 60px 40px;
+  }
+  
+  .heading {
+    font-size: 36px;
   }
 }
 
@@ -163,32 +183,28 @@
   .eventSection {
     padding: 100px 0;
   }
-
+  
   .date,
   .location {
     font-size: 18px;
   }
-
+  
   .description {
     max-width: 1200px;
     font-size: 18px;
     line-height: 1.6;
   }
-}
-
-/* Ultra-wide screens: 1920px+ */
-@media (min-width: 1920px) {
-  .heading {
-    font-size: 48px;
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    padding: 0;
   }
-
-  .date,
-  .location {
-    font-size: 24px;
+  
+  .speakersSection {
+    padding: 80px 80px;
   }
-
-  .description {
-    font-size: 28px;
-    max-width: 1700px;
+  
+  .speakerHeading {
+    font-size: 42px;
   }
 }

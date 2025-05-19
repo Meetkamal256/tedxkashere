@@ -19,7 +19,7 @@ const page = () => {
             TEDxFUKashere experience.
           </p>
         </section>
-
+        
         <section className={styles.agendaSection}>
           <h2>Event Agenda</h2>
           <ul className={styles.scheduleList}>
@@ -46,9 +46,9 @@ const page = () => {
             </li>
           </ul>
         </section>
-
+        
         <section className={styles.speakersSection}>
-          <h2 className={styles.heading}>
+          <h2 className={styles.speakerHeading}>
             Featured <span className={styles.span}>Speakers</span>
           </h2>
           <div className={styles.grid}>
