@@ -155,3 +155,39 @@ export const previousSpeakers = [
     topic: "python fundamentals",
   },
 ];
+
+
+export const previousEvents = [
+  {
+    year: "2023",
+    theme: "Breaking Boundaries",
+    description:
+      "A powerful collection of talks that inspired students to think beyond limits.",
+    image: "/blankImage.png",
+    highlightsUrl: "#",
+  },
+  {
+    year: "2022",
+    theme: "Beyond the Norm",
+    description:
+      "Speakers challenged stereotypes and shared unique perspectives on innovation.",
+    image: "/blankImage.png",
+    highlightsUrl: "#",
+  },
+  {
+    year: "2021",
+    theme: "Voices of Change",
+    description:
+      "A showcase of bold voices driving transformation in their communities.",
+    image: "/blankImage.png",
+    highlightsUrl: "#",
+  },
+  {
+    year: "2020",
+    theme: "Rewriting the Narrative",
+    description:
+      "Talks centered on reshaping ideas about youth, leadership, and growth.",
+    image: "/blankImage.png",
+    highlightsUrl: "#",
+  },
+];
