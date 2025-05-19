@@ -1,0 +1,130 @@
+.speakersSection {
+    background-color: #000;  
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .tabButtons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .tabButtons button {
+    padding: 10px 20px;
+    border: 2px solid #e62b1e;
+    background: transparent;
+    color: #e62b1e;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .tabButtons button:hover {
+    background: #e62b1e;
+    color: #fff;
+  }
+  
+  .activeTab {
+    background: #e62b1e;
+    color: #fff;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .image {
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px 0 8px 0;
+  }
+  
+  .topic {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  .viewAll {
+    display: inline-block;
+    margin-top: 20px;
+    color: #e62b1e;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #e62b1e;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .viewAll:hover {
+    background-color: #e62b1e;
+    color: #fff;
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    
+    .tabButtons {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .tabButtons button {
+        padding: 10px 20px;
+        border: 2px solid #e62b1e;
+        background: transparent;
+        color: #e62b1e;
+      
+      }
+      
+    .name {
+      font-size: 18px;
+    }
+    
+    .topic {
+      font-size: 15px;
+    }
+  }
+  

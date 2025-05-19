@@ -89,3 +89,69 @@ export const teamMembers = [
     },
   },
 ];
+
+export const allSpeakers = [
+  {
+    id: 1,
+    name: "Dr. Muhammad Bello",
+    topic: "Breaking Boundaries in Science",
+  },
+  {
+    id: 2,
+    name: "Fatima Muhammad",
+    topic: "Empowering Youth Through Sports",
+  },
+  {
+    id: 3,
+    name: "Jamilah Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 4,
+    name: "Mubarak Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 5,
+    name: "Hafsah Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 6,
+    name: "Abida Muhammad",
+    topic: "python fundamentals",
+  },
+];
+
+export const previousSpeakers = [
+  {
+    id: 1,
+    name: "Dr. Hafsah Muhammad",
+    topic: "Breaking Boundaries in Science",
+  },
+  {
+    id: 2,
+    name: "Ummi Muhammad",
+    topic: "Empowering Youth Through Sports",
+  },
+  {
+    id: 3,
+    name: "Jamilah Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 4,
+    name: "Mubarak Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 5,
+    name: "Hafsah Muhammad",
+    topic: "python fundamentals",
+  },
+  {
+    id: 6,
+    name: "Abida Muhammad",
+    topic: "python fundamentals",
+  },
+];
