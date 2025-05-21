@@ -1,8 +1,9 @@
 "use client";
-import styles from "./featured-speakers.module.css";
 import { featuredSpeakers } from "../../data";
 import DetailsBtn from "../detailsBtn/DetailsBtn";
 import SpeakerCard from "../speakerCard/SpeakerCard";
+import styles from "./featured-speakers.module.css";
+
 
 const FeaturedSpeakers = () => {
   return (

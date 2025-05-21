@@ -1,5 +1,6 @@
-import styles from "./speaker-card.module.css";
 import Image from "next/image";
+import styles from "./speaker-card.module.css";
+
 
 type SpeakerCardProps = {
   name: string;

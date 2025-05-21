@@ -1,6 +1,7 @@
-import styles from "./previous-event.module.css";
 import Image from "next/image";
 import { previousEvents } from "@/app/data";
+import styles from "./previous-event.module.css";
+
 
 
 

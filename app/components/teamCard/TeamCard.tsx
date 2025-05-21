@@ -1,6 +1,6 @@
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import styles from "./teamCard.module.css";
 import Image from "next/image";
+import styles from "./teamCard.module.css";
 
 type TeamCardProps = {
   name: string;
@@ -31,7 +31,7 @@ const TeamCard = ({
           priority
         />
       </div>
-      
+
       <h2>{name}</h2>
       <p className={styles.role}>{role}</p>
       <div className={styles.socials}>

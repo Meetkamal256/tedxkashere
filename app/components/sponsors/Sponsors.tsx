@@ -1,6 +1,7 @@
 "use client";
-import styles from "./sponsors.module.css";
 import { sponsors } from "../../data";
+import styles from "./sponsors.module.css";
+
 
 const Sponsors = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
-import styles from "./intro.module.css";
 import DetailsBtn from "../detailsBtn/DetailsBtn";
+import styles from "./intro.module.css";
 
 const Intro = () => {
   return (
