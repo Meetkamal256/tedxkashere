@@ -13,16 +13,16 @@ import styles from "./navbar.module.css";
 const Navbar = () => {
   const [openDropDown, setOpenDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  
   const toggleDropdown = (menu: string) => {
     setOpenDropdown(openDropDown === menu ? null : menu);
   };
-
+  
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     setOpenDropdown(null);
   };
-
+  
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContent}>
@@ -31,11 +31,11 @@ const Navbar = () => {
             <Image src="/logo.png" width={200} height={40} alt="logo image" />
           </Link>
         </div>
-
+        
         <div className={styles.hamburger} onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? <IoMdClose /> : <IoMdMenu />}
         </div>
-
+        
         <ul
           className={`${styles.navMenu} ${
             isMobileMenuOpen ? styles.mobileActive : ""
@@ -44,7 +44,7 @@ const Navbar = () => {
           <li>
             <Link href="/">Home</Link>
           </li>
-
+          
           <li onClick={() => toggleDropdown("about")}>
             About
             {openDropDown === "about" ? (
@@ -55,7 +55,7 @@ const Navbar = () => {
             {openDropDown === "about" && (
               <ul className={styles.dropdownMenu}>
                 <li>
-                  <Link href="/about">About TEDxFUKashere</Link>
+                  <Link href="/about">About TEDx FUKashere</Link>
                 </li>
                 <li>
                   <Link href="/about/team">About Our Team</Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-
+          
           <li onClick={() => toggleDropdown("speakers")}>
             Speakers
             {openDropDown === "speakers" ? (
@@ -82,7 +82,7 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-
+          
           <li onClick={() => toggleDropdown("event")}>
             Event
             {openDropDown === "event" ? (
@@ -101,7 +101,7 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-
+          
           <li onClick={() => toggleDropdown("partners")}>
             Partners
             {openDropDown === "partners" ? (

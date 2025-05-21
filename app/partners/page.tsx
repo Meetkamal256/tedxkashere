@@ -10,7 +10,7 @@ const PartnersPage = () => {
         <h1>Our Sponsors & Partners</h1>
         <p>
           We are proud to collaborate with organizations that support
-          TEDxFUKashere’s mission.
+          TEDx FUKashere’s mission.
         </p>
       </div>
       <Sponsors />
@@ -19,7 +19,7 @@ const PartnersPage = () => {
       <div className={styles.cta}>
         <h2>Become a Sponsor or Partner</h2>
         <p>
-          We invite like-minded organizations to collaborate with TEDxFUKashere.
+          We invite like-minded organizations to collaborate with TEDx FUKashere.
         </p>
         <a href="/contact" className={styles.ctaButton}>
           Get Involved

@@ -9,7 +9,7 @@ const page = () => {
             <span>Apply</span> to Speak
           </h1>
           <p>
-            Do you have an idea worth spreading? Become one of our TEDxKashere
+            Do you have an idea worth spreading? Become one of our TEDx FUKashere
             speakers and inspire change.
           </p>
         </div>

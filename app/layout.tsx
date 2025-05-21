@@ -7,8 +7,8 @@ import Footer from "./components/sections/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TEDxFUKashere",
-  description: "Official TEDxFUKashere Event Website",
+  title: "TEDx FUKashere",
+  description: "Official TEDx FUKashere Event Website",
 };
 
 export default function RootLayout({

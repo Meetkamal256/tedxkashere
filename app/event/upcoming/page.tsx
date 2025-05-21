@@ -16,7 +16,7 @@ const page = () => {
           <p className={styles.description}>
             Join us for a day of thought-provoking talks, inspiring
             performances, and meaningful conversations. Be part of the
-            TEDxFUKashere experience.
+            TEDx FUKashere experience.
           </p>
         </section>
         

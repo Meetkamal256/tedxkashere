@@ -11,7 +11,7 @@ const EventInfo = () => {
         <p className={styles.location}>Federal University Kashere Auditorium</p>
         <p className={styles.description}>
           Join us for a day of thought-provoking talks, inspiring performances,
-          and meaningful conversations. Be part of the TEDxFUKashere experience.
+          and meaningful conversations. Be part of the TEDx FUKashere experience.
         </p>
         <DetailsBtn title="View Upcoming Events" href="/event/upcoming" />
       </div>

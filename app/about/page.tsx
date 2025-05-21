@@ -16,21 +16,21 @@ const page = () => {
               About <span>Tedx</span> FUKashere
             </h2>
             <p className={styles.paragraph}>
-              TEDxFUKashere is an independently organized TED event to be held
+              TEDx FUKashere is an independently organized TED event to be held
               in Gombe, University of Karshere. It is one of its kind that will
               bring together some of the brightest thinkers and doers from
               around Nigeria and the rest of the world to gather, connect and
               establish collaboration to develop a blueprint on how to make
               great ideas have big impacts in areas of governance, business,
               education, health, economy entrepreneurship and innovation among
-              others. TEDxFUKashere would mark out the pathway to co-create and
+              others. TEDx FUKashere would mark out the pathway to co-create and
               generate ideas. Ambition alone is not enough to bring about the
               kind of impact we want to see in our society. Together, we must
               convert ambition into practical ideas that would generate the
               right positive impacts in our society.
             </p>
             <p className={styles.paragraph}>
-              Just like other TEDx Talks, TEDxFUKashere looks to inspire the
+              Just like other TEDx Talks, TEDx FUKashere looks to inspire the
               community through the power of IDEAS WORTH SPREADING. Our event is
               much more than just a gathering; it is a catalyst for intellectual
               exploration and creative collaboration. You will be exposed to a
@@ -39,7 +39,7 @@ const page = () => {
               your horizons, and inspire you to think differently.
             </p>
             <p className={styles.paragraph}>
-              Our desired outcome is that TEDxFUKashere will be the birth of
+              Our desired outcome is that TEDx FUKashere will be the birth of
               great ideas that would make significant impacts in people’s lives
               and society. Our event seeks to bring people of all ages, gender,
               tribes, religions, and political ideology to come together and
@@ -79,14 +79,14 @@ const page = () => {
           <div className={styles.tedxContainer}>
             <h2>Our Story</h2>
             <p>
-              TEDxKashere is an independently organized TEDx event held in the
+              TEDx FUKashere is an independently organized TEDx event held in the
               heart of Kashere. We aim to showcase bold ideas, inspire change,
               and connect thinkers, doers, and dreamers in our local community.
             </p>
           </div>
           <div className={styles.license}>
             <p>
-              TEDxKashere is independently organized under a license granted by
+              TEDx FUKashere is independently organized under a license granted by
               TED. The views and opinions expressed at TEDxKashere events are
               those of the individual speakers.
             </p>

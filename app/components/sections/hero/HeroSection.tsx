@@ -7,7 +7,7 @@ const Hero = () => {
       <div className={styles.hero}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            TEDx<span>FUKashere </span>2025
+            TEDx<span> FUKashere </span>2025
           </h1>
           <p className={styles.subtitle}>
             Ideas Worth Spreading — Join us at Federal University Kashere for a

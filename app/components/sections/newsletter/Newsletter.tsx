@@ -7,7 +7,7 @@ const Newsletter = () => {
         <div className={styles.ctaContainer}>
           <h2>Be Part of the Story</h2>
           <p>
-            Get exclusive updates, behind-the-scenes content, and TEDxKashere
+            Get exclusive updates, behind-the-scenes content, and TEDx FUKashere
             community news straight to your inbox.
           </p>
           <form className={styles.newsletterForm}>
