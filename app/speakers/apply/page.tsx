@@ -1,4 +1,4 @@
-import styles from "./apply.module.css";
+import styles from "./page.module.css";
 
 const page = () => {
   return (

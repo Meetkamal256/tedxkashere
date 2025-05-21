@@ -1,6 +1,6 @@
 "use client";
 import { useState, FormEvent, ChangeEvent } from "react";
-import styles from "./contact.module.css";
+import styles from "./page.module.css";
 
 const ContactPage = () => {
   // Form input state

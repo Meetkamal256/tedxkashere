@@ -2,7 +2,7 @@
 import { useState } from "react";
 import SpeakerCard from "../components/speakerCard/SpeakerCard";
 import { allSpeakers, previousSpeakers } from "../data";
-import styles from "./speaker.module.css";
+import styles from "./page.module.css";
 
 const Page = () => {
   const [activeTab, setActiveTab] = useState("all");

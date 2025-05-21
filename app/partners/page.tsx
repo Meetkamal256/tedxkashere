@@ -1,7 +1,7 @@
 "use client";
 
 import Sponsors from "../components/sponsors/Sponsors";
-import styles from "./partners.module.css";
+import styles from "./page.module.css";
 
 const PartnersPage = () => {
   return (
