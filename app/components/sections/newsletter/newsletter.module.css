@@ -1,0 +1,138 @@
+.ctaSection {
+  background-color: #000; /* TEDx Black */
+  padding: 40px 16px;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+
+  .ctaContainer {
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 16px;
+      color: #ccc;
+    }
+
+    .newsletterForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+
+      input[type="email"] {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      button {
+        background-color: #e62b1e;
+        color: white;
+        padding: 8px 24px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: white;
+          color: #e62b1e;
+        }
+      }
+    }
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .ctaSection {
+    padding: 60px 32px;
+
+    .ctaContainer {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .newsletterForm {
+        flex-direction: row;
+
+        input[type="email"] {
+          flex: 2;
+          min-width: 250px;
+        }
+
+        button {
+          flex: 1;
+          min-width: 140px;
+        }
+      }
+    }
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .ctaSection {
+    padding: 70px 40px;
+
+    .ctaContainer {
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .newsletterForm {
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+/* Extra-large screens (1440px+) */
+@media (min-width: 1440px) {
+  .ctaSection {
+    padding: 80px 80px;
+
+    .ctaContainer {
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .newsletterForm {
+        max-width: 800px;
+
+        input[type="email"] {
+          font-size: 1.1rem;
+        }
+
+        button {
+          font-size: 1.1rem;
+          padding: 14px 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.card {
+  background-color: #000;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    .image {
+      object-fit: cover;
+    }
+  }
+
+  .role {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 0.5rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin: 0 8px;
+      color: #e62b1e;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* Tablets and above (≥768px) */
+@media (min-width: 768px) {
+  .card {
+    padding: 20px;
+
+    .socials a {
+      font-size: 1.1rem;
+    }
+
+    .role {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+/* Small desktops (≥1024px) */
+@media (min-width: 1024px) {
+  .card {
+    padding: 24px;
+
+    .socials a {
+      font-size: 1.2rem;
+    }
+
+    .role {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* Extra-large screens (≥1440px) */
+@media (min-width: 1440px) {
+  .card {
+    padding: 28px;
+
+    .socials a {
+      font-size: 1.3rem;
+    }
+
+    .role {
+      font-size: 1.2rem;
+    }
+  }
+}
