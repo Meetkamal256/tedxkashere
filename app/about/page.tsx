@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 const page = () => {
   return (
     <section>
-      <div className={styles.aboutPage}>
+      <div className={styles.aboutPageWrapper}>
         <div className={styles.topSection}>
           <h1>
             About <span>Tedx</span> FUKashere

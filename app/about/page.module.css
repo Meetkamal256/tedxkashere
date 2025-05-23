@@ -1,4 +1,4 @@
-.aboutPage {
+.aboutPageWrapper {
   background: #1a1a1a;
   padding: 30px 16px;
   color: #bbb;
@@ -90,7 +90,7 @@
 
   /* Extra-large screens (1440px+) */
   @media (min-width: 1440px) {
-    .aboutPage {
+    .aboutPageWrapper {
       padding: 60px 80px;
     }
 
