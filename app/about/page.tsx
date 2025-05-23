@@ -4,14 +4,15 @@ const page = () => {
   return (
     <section>
       <div className={styles.aboutPage}>
-        <div className={styles.aboutHero}>
+        <div className={styles.topSection}>
           <h1>
             About <span>Tedx</span> FUKashere
           </h1>
           <p>Ideas worth spreading, locally organized in Kashere.</p>
         </div>
-        <div className={styles.aboutContent}>
-          <div className={styles.tedxContainer}>
+        
+        <div className={styles.bottomSection}>
+          <article className={styles.article}>
             <h2>
               About <span>Tedx</span> FUKashere
             </h2>
@@ -46,8 +47,8 @@ const page = () => {
               co-create solutions through the generation of ideas that will
               improve our communities.
             </p>
-          </div>
-          <div className={styles.tedxContainer}>
+          </article>
+          <article className={styles.article}>
             <h2>
               About <span>Tedx</span>
             </h2>
@@ -57,8 +58,9 @@ const page = () => {
               TED Talks video and live speakers combine to spark deep discussion
               and connection.
             </p>
-          </div>
-          <div className={styles.tedxContainer}>
+          </article>
+
+          <article className={styles.article}>
             <h2>
               About <span>TED</span>
             </h2>
@@ -75,22 +77,23 @@ const page = () => {
               Meanwhile, independently run TEDx events help share ideas in
               communities around the world.
             </p>
-          </div>
-          <div className={styles.tedxContainer}>
+          </article>
+          <article className={styles.article}>
             <h2>Our Story</h2>
             <p>
-              TEDx FUKashere is an independently organized TEDx event held in the
-              heart of Kashere. We aim to showcase bold ideas, inspire change,
-              and connect thinkers, doers, and dreamers in our local community.
+              TEDx FUKashere is an independently organized TEDx event held in
+              the heart of Kashere. We aim to showcase bold ideas, inspire
+              change, and connect thinkers, doers, and dreamers in our local
+              community.
             </p>
-          </div>
-          <div className={styles.license}>
+          </article>
+          <article className={styles.article}>
             <p>
-              TEDx FUKashere is independently organized under a license granted by
-              TED. The views and opinions expressed at TEDxKashere events are
+              TEDx FUKashere is independently organized under a license granted
+              by TED. The views and opinions expressed at TEDxKashere events are
               those of the individual speakers.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
