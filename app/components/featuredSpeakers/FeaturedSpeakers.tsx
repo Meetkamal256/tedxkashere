@@ -4,7 +4,6 @@ import DetailsBtn from "../detailsBtn/DetailsBtn";
 import SpeakerCard from "../speakerCard/SpeakerCard";
 import styles from "./featured-speakers.module.css";
 
-
 const FeaturedSpeakers = () => {
   return (
     <section className="container">
@@ -22,7 +21,7 @@ const FeaturedSpeakers = () => {
             />
           ))}
         </div>
-        <DetailsBtn title="Meet the speakers" href="/speakers" />
+        <DetailsBtn href="/speakers">Meet the speakers</DetailsBtn>
       </div>
     </section>
   );

@@ -1,16 +1,16 @@
 import Link from "next/link";
-import styles from "./details-btn.module.css"
+import styles from "./details-btn.module.css";
 
-type DetailsBtnProp = {
-  title: string;
+type DetailsBtnProps = {
   href: string;
-}
+  children: React.ReactNode;
+};
 
-const DetailsBtn = ({title, href}: DetailsBtnProp) => {
+const DetailsBtn = ({ href, children }: DetailsBtnProps) => {
   return (
     <div>
       <Link href={href} className={styles.cta}>
-        {title}
+        {children}
       </Link>
     </div>
   );

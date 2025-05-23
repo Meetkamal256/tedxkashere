@@ -18,7 +18,7 @@ const Intro = () => {
             to spark deep conversation and connection through powerful talks and
             stories.
           </p>
-          <DetailsBtn title="Our Story" href="/about" />
+          <DetailsBtn href="/about">Our Story</DetailsBtn>
         </div>
       </div>
     </section>
