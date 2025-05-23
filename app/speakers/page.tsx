@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import SpeakerCard from "../components/speakerCard/SpeakerCard";
 import { allSpeakers, previousSpeakers } from "../data";

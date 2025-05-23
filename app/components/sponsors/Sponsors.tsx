@@ -1,4 +1,5 @@
 "use client";
+
 import { sponsors } from "../../data";
 import styles from "./sponsors.module.css";
 
