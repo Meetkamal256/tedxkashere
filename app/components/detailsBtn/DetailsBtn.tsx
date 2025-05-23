@@ -6,7 +6,7 @@ type DetailsBtnProp = {
   href: string;
 }
 
-const detailsBtn = ({title, href}: DetailsBtnProp) => {
+const DetailsBtn = ({title, href}: DetailsBtnProp) => {
   return (
     <div>
       <Link href={href} className={styles.cta}>
@@ -16,4 +16,4 @@ const detailsBtn = ({title, href}: DetailsBtnProp) => {
   );
 };
 
-export default detailsBtn;
+export default DetailsBtn;
