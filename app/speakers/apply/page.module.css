@@ -1,33 +1,36 @@
 .applyPage {
-    padding: 2rem 1rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .header {
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      span {
+        color: #e62b1e;
+      }
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
   }
-  
-  .header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+
+  .content {
+    p {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
   }
-  
-  .header h1 span {
-    color: #e62b1e;
-  }
-  
-  .header p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 2rem;
-  }
-  
-  .content p {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
+
   .button {
     display: inline-block;
     margin-top: 2rem;
@@ -40,61 +43,70 @@
     border-radius: 0.5rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #cc2419;
+    }
   }
-  
-  .button:hover {
-    background-color: #cc2419;
-  }
-  
+
   /* ===== Responsive Styles ===== */
-  
-  /* Tablets and small laptops (≥768px) */
+
   @media (min-width: 768px) {
-    .header h1 {
-      font-size: 2.4rem;
+    .header {
+      h1 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
     }
-  
-    .header p,
-    .content p {
-      font-size: 1.05rem;
+
+    .content {
+      p {
+        font-size: 1.05rem;
+      }
     }
-  
+
     .button {
       width: auto;
       padding: 0.75rem 2rem;
     }
   }
-  
-  /* Medium desktops (≥1024px) */
+
   @media (min-width: 1024px) {
-    .applyPage {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+
+    .header {
+      h1 {
+        font-size: 2.8rem;
+      }
     }
-  
-    .header h1 {
-      font-size: 2.8rem;
-    }
-  
-    .content p {
-      font-size: 1.125rem;
+
+    .content {
+      p {
+        font-size: 1.125rem;
+      }
     }
   }
-  
-  /* Large desktops and above (≥1440px) */
+
   @media (min-width: 1440px) {
-    .applyPage {
-      max-width: 1200px;
-      padding: 4rem 3rem;
+    max-width: 1200px;
+    padding: 4rem 3rem;
+
+    .header {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
     }
-  
-    .header h1 {
-      font-size: 3rem;
-    }
-  
-    .header p,
-    .content p {
-      font-size: 1.2rem;
+
+    .content {
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
-  
+}

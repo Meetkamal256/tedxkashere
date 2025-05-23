@@ -10,6 +10,7 @@ const Newsletter = () => {
             Get exclusive updates, behind-the-scenes content, and TEDx FUKashere
             community news straight to your inbox.
           </p>
+          
           <form className={styles.newsletterForm}>
             <input type="email" placeholder="Enter your email" required />
             <button type="submit">Subscribe</button>

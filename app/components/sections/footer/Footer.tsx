@@ -14,7 +14,7 @@ const Footer = () => {
           </Link>
           <p>Independently organized under license from TED.</p>
         </div>
-
+        
         <div className={styles.links}>
           <Link href="/about">About</Link>
           <Link href="/speakers">Speakers</Link>
@@ -22,7 +22,7 @@ const Footer = () => {
           <Link href="/partners">Partners</Link>
           <Link href="/contact">Contact</Link>
         </div>
-
+        
         <div className={styles.socials}>
           <a
             href="https://twitter.com/"

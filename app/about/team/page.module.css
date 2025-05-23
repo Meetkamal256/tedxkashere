@@ -1,0 +1,84 @@
+.teamPage {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 30px 16px;
+  text-align: center;
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+
+    span {
+      color: #e62b1e;
+    }
+  }
+
+  .teamGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #000;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  /* Tablets and small desktops (min-width: 768px) */
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+
+    .card {
+      padding: 20px;
+    }
+    
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Large screens (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .card {
+      padding: 24px;
+    }
+
+    .teamGrid {
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 40px;
+    }
+  }
+
+  /* Extra-large screens (min-width: 1440px) */
+  @media (min-width: 1440px) {
+    padding: 60px 80px;
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .card {
+      padding: 28px;
+    }
+
+    .teamGrid {
+      gap: 48px;
+    }
+  }
+}

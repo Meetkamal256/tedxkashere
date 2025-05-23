@@ -156,7 +156,6 @@ export const previousSpeakers = [
   },
 ];
 
-
 export const previousEvents = [
   {
     year: "2023",

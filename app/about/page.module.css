@@ -1,9 +1,8 @@
 .aboutPage {
-    background: #1a1a1a;
-    padding: 30px 16px;
-    color: #bbb;
-  }
-  
+  background: #1a1a1a;
+  padding: 30px 16px;
+  color: #bbb;
+
   .aboutContent {
     display: flex;
     flex-direction: column;
@@ -11,104 +10,104 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   .aboutHero {
     text-align: center;
     margin-bottom: 3rem;
   }
-  
+
   .aboutHero h1 {
     font-size: 1.8rem;
     color: #fff;
   }
-  
+
   .aboutHero span {
     color: #e62b1e;
   }
-  
+
   .aboutHero p {
     font-size: 1rem;
     color: #bbb;
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   .paragraph {
     margin-top: 30px;
   }
-  
+
   .tedxContainer h2 {
     font-size: 1.3rem;
     color: #fff;
     margin-bottom: 1rem;
   }
-  
+
   .tedxContainer span {
     color: #e62b1e;
   }
-  
+
   .tedxContainer p {
     font-size: 0.9rem;
     color: #bbb;
     line-height: 1.6;
     max-width: 800px;
   }
-  
+
   /* Tablets and up */
   @media (min-width: 768px) {
     .aboutHero h1 {
       font-size: 2.2rem;
     }
-  
+
     .aboutHero p {
       font-size: 1.1rem;
     }
-  
+
     .tedxContainer h2 {
       font-size: 1.5rem;
     }
-  
+
     .tedxContainer p {
       font-size: 1rem;
     }
   }
-  
+
   /* Desktops and up */
   @media (min-width: 1024px) {
     .aboutHero h1 {
       font-size: 2.5rem;
     }
-  
+
     .aboutHero p,
     .tedxContainer p {
       font-size: 1.05rem;
     }
-  
+
     .tedxContainer h2 {
       font-size: 1.7rem;
     }
   }
-  
+
   /* Extra-large screens (1440px+) */
   @media (min-width: 1440px) {
     .aboutPage {
       padding: 60px 80px;
     }
-  
+
     .aboutHero h1 {
       font-size: 3rem;
     }
-  
+
     .aboutHero p {
       font-size: 1.2rem;
     }
-  
+
     .tedxContainer h2 {
       font-size: 2rem;
     }
-  
+
     .tedxContainer p {
       font-size: 1.1rem;
     }
   }
-  
+}

@@ -1,93 +1,104 @@
 @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .sponsorsSection {
-    background-color: #f8f8f8;
-    padding: 40px 16px;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+  100% {
+    transform: translateX(-50%);
   }
-  
+}
+
+.sponsorsSection {
+  background-color: #f8f8f8;
+  padding: 40px 16px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
   .scrollerWrapper {
     overflow: hidden;
-    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
   }
-  
+
   .logoScroller {
     display: flex;
     gap: 40px;
     width: max-content;
     animation: scroll 25s linear infinite;
   }
-  
+
   .logoWrapper {
     flex: none;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .logo {
     width: 120px;
     height: 60px;
     object-fit: contain;
     transition: filter 0.3s ease;
   }
-  
+
   /* Medium screens */
   @media (min-width: 768px) {
     .sponsorsSection {
       padding: 50px 32px;
     }
-  
+
     .logo {
       width: 140px;
       height: 70px;
     }
-  
+
     .logoScroller {
       gap: 48px;
     }
   }
-  
+
   /* Large screens */
   @media (min-width: 1024px) {
     .sponsorsSection {
       padding: 60px 48px;
     }
-  
+
     .logo {
       width: 160px;
       height: 75px;
     }
-  
+
     .logoScroller {
       gap: 56px;
     }
   }
-  
+
   /* Extra-large screens: 1440px+ */
   @media (min-width: 1440px) {
     .sponsorsSection {
       padding: 80px 80px;
     }
-  
+
     .logo {
       width: 180px;
       height: 90px;
     }
-  
+
     .logoScroller {
       gap: 64px;
       animation-duration: 30s;
     }
   }
-  
+}

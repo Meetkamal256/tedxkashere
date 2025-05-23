@@ -12,7 +12,7 @@ const ContactPage = () => {
   const [nameError, setNameError] = useState<string>("");
   const [emailError, setEmailError] = useState<string>("");
   const [messageError, setMessageError] = useState<string>("");
-
+  
   const validateForm = (): boolean => {
     let isValid = true;
 
