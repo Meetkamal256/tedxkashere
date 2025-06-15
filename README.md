@@ -53,22 +53,16 @@ To run the project locally on your machine:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Meetkamal256/tedxkashere.git   
-
-### 2.  Navigate into the project folder
-
-```bash
-cd tedxkashere
-
-### 3.  Navigate into the project folder
+git clone https://github.com/Meetkamal256/tedxkashere.git
+```
+### 2. Navigate to project
 
 ```bash
-npm install
-
-### 4.  Start the development server
-
-```bash
+cd  tedxkashere
+```
+### 3. start development server
 npm run dev
-
-
-
+```
+```bash
+git clone https://github.com/Meetkamal256/tedxkashere.git
+```
