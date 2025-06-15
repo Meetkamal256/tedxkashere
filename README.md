@@ -66,3 +66,27 @@ npm run dev
 ```bash
 git clone https://github.com/Meetkamal256/tedxkashere.git
 ```
+
+3000
+
+## 📌 Project Status
+✅ All sections implemented and styled
+
+✅ Fully responsive layout
+
+✅ Hosted live on Vercel
+
+🔄 Currently using placeholder content (awaiting real assets)
+
+🧠 Design implemented based on TEDx global branding guidelines
+
+## 🙌 Acknowledgements
+-Built independently without any design file
+
+-Inspired by several TEDx community sites
+
+-Branding follows official TEDx guidelines
+
+🧑‍💻 Author
+Kamaluddeen Muhammad
+Frontend Developer
